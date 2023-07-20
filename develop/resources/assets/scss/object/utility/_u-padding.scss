@@ -1,0 +1,61 @@
+/* ==========================================================================
+ padding
+========================================================================== */
+
+/* Top padding */
+@for $value from 0 to 26 {
+  .u-pt-#{$value} {
+    padding-top: $value + rem !important;
+  }
+}
+
+/* Right padding */
+@for $value from 0 to 26 {
+  .u-pr-#{$value} {
+    padding-right: $value + rem !important;
+  }
+}
+
+/* Bottom padding */
+@for $value from 0 to 26 {
+  .u-pb-#{$value} {
+    padding-bottom: $value + rem !important;
+  }
+}
+
+/* Left padding */
+@for $value from 0 to 26 {
+  .u-pl-#{$value} {
+    padding-left: $value + rem !important;
+  }
+}
+
+@media (--mobile) {
+  /* Top padding */
+  @for $value from 0 to 26 {
+    .u-pt-sp-#{$value} {
+      padding-top: $value + rem !important;
+    }
+  }
+
+  /* Right padding */
+  @for $value from 0 to 26 {
+    .u-pr-sp-#{$value} {
+      padding-right: $value + rem !important;
+    }
+  }
+
+  /* Bottom padding */
+  @for $value from 0 to 26 {
+    .u-pb-sp-#{$value} {
+      padding-bottom: $value + rem !important;
+    }
+  }
+
+  /* Left padding */
+  @for $value from 0 to 26 {
+    .u-pl-sp-#{$value} {
+      padding-left: $value + rem !important;
+    }
+  }
+}

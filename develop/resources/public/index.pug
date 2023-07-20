@@ -1,0 +1,100 @@
+doctype html
+html(lang="ja")
+  head
+    include /elements/head-property
+    include /elements/head-assets
+    include /mixin/meta
+    +meta({
+        title:"website title"
+    })
+    :php wp_head();
+  body
+    include /elements/body-preppend
+    include /elements/header
+    .l-main
+      main
+        top
+          .image
+            img(src="http://yurucraft.jp/wp-content/uploads/2023/07/07_17.png" alt="" class="pc")
+            img(src="http://yurucraft.jp/wp-content/uploads/2023/07/07_17-sp.png" alt="" class="sp")
+            img(src="http://yurucraft.jp/wp-content/uploads/2023/07/child-1.png" alt="" class="child")
+          .container
+            #about.mt-3
+              .title
+                |About
+              .wrap
+                .text
+                  p 「ゆるっとクラフト」は、自分の居場所を感じられずにいる不登校の子どもたちに、マイクラを使った
+                  span.color
+                    |気軽に楽しく
+                  |参加できるプログラムを届けるプロジェクトです。複数の居場所支援団体、大学のマインクラフトサークル、マイクラ配信者の皆さんをつなぎ、子どもたちが笑って過ごせる新しい居場所支援のしくみをデザインします。
+
+            #issue.mt-3
+              .title
+                |取り組む問題
+              .wrap
+                .text
+                  |少子化が進む一方で、不登校の子どもたちは増えています。もちろん、不登校は悪いことじゃない。でも、こんなに増えている不登校の子どもたちに、居場所の数は追いついているのか。子どもたちやその家族が孤立し、悩み苦しむ状況が続いているのだとしたら、それは今すぐ解決したい問題です。
+                .image
+                  img(src="http://yurucraft.jp/wp-content/uploads/2023/07/img01.png" alt="")
+            .work.mt-3
+              .title
+                |現状の支援の課題
+              .wrap
+                .text
+                  |もちろん、子どもたちに居場所を提供している居場所支援団体は日本に多くあります。でも、「家を出て」「新しい場所に行き」「新しい人に会う」ということに心理的ハードルを感じるお子さんも多くいる。踏ん切りがつかずにいるうちに孤立してしまうという課題があります。
+                .image
+                  img(src="http://yurucraft.jp/wp-content/uploads/2023/07/image02.png")
+            #active.mt-3
+              .title
+                |活動内容
+              .wrap
+                .text
+                  |そこで私たちは、子どもたちがつい参加したくなる気軽で楽しいプログラムを、複数の居場所支援団体の皆さんと一緒に届けます。約3か月のプログラム期間、子どもたちは自宅からオンラインで通話をつなぎ、団体スタッフやゆるクラコーチたちと一緒にマイクラをプレイします。
+                .image
+                  img(src="http://yurucraft.jp/wp-content/uploads/2023/07/active-1.png", alt="")
+              .wrap
+                .text
+                  p 1回2時間のセッションを週2日実施し、プログラムの最終日にはマイクラYouTuberの方たちとのイベントを楽しんで頂きます。
+                  p こうしたプログラムを子どもたちに届けるために、私たちは居場所支援団体や大学のマインクラフトサークルの方たち、マイクラ配信をするYouTuberの皆さんと協力をして、新しい支援のしくみを作ります。
+                .image
+                  img(src="http://yurucraft.jp/wp-content/uploads/2023/07/active-2.png", alt="")
+            #contact.mt-3
+              .title
+                |お問い合わせ
+              .wrap
+                .text
+                  |私たちはできるだけ多くの人・企業・団体に力を貸して頂きながら、より多くの子どもたちに居場所と笑顔を届けていきたいと考えています。ぜひお問い合わせください。
+                ul
+                  li
+                    |・ゆるクラに参加したい不登校の方・保護者の方
+                  li
+                    |・ゆるクラを提供したい居場所支援団体の方
+                  li
+                    |・協賛や支援に関心のある企業のご担当者さま
+                  li
+                    |・取材を検討頂いているメディアのご担当者さま
+              .contact-form
+                form(action="")
+                  .inner
+                    span 件名 :
+                    input(type="text" placeholder="subject" name="name" required="")
+                  .inner
+                    span 会社/団体名 :
+                    input(type="text" placeholder="company-name" name="name" required="")
+                  .inner
+                    span お名前 :
+                    input(type="text" placeholder="name" name="name" required="")
+                  .inner
+                    span メールアドレス :
+                    input(type="email" placeholder="Email" name="email" required="")
+                  .inner
+                    span お問い合わせ内容 :
+                    textarea(placeholder="Message" name="message", cols="30", rows="10")
+                  input(type="submit" value="送信")
+
+    include /elements/footer
+    include /elements/body-append
+
+
+

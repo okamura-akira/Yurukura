@@ -1,0 +1,10 @@
+//=include jquery/dist/jquery.min.js
+//*=include swiper/swiper-bundle.min.js
+//*=include velocity-animate/velocity.min.js
+//=include gsap/dist/gsap.min.js
+//*=include gsap/dist/ScrollToPlugin.min.js
+//=include gsap/dist/ScrollTrigger.min.js
+//*=include vue/dist/vue.min.js
+//Vue.config.devtools = true;
+//*=include es6-promise/dist/es6-promise.auto.min.js
+//*=include axios/dist/axios.min.js
